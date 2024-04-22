@@ -8,7 +8,7 @@ import "../styles/main.css";
         <Scrollindicator />
       </div>
       <div class="logo-top">
-        <img src="../../public/ikoner/itmv-logo.svg" alt="logo">
+        <img id="logo-header" src="../../public/ikoner/itmv-logo.svg" alt="logo">
       </div>
     <div id="nav-bar-top">
     <nav class="topnav">
@@ -80,7 +80,7 @@ import "../styles/main.css";
   position: sticky;
   top: 0;
 }
-img{
+#logo-header{
     width: auto;
     height: 80px;
     position: fixed;
@@ -89,9 +89,8 @@ img{
 
 }
     #nav-bar-top{
-        position: fixed;
+        position: sticky;
     text-align:center;
-    position:fixed;
     z-index:9999;
     margin: 0 auto; left:0px; right:0px;
     float:clear;
@@ -127,7 +126,11 @@ img{
         color: black;
         text-decoration: none;
     }
+    @media (min-width:1000 px){
+        
+    }
 </style>
+
 <script>
 //     window.addEventListener("scroll", updateIndicator);
 
