@@ -2,7 +2,8 @@
 import "../styles/main.css";
 ---
 
-<section class="tekst_wrapper">
+<section >
+  <div class="tekst_wrapper">
   <h1>Hvem er vi?</h1>
   <p>
     I Tråd Med Verden har siden 2018 specialiseret sig i genanvendelse af
@@ -19,6 +20,7 @@ import "../styles/main.css";
     Med vores team af designere og socialt fagligt personale sørger vi for flow,
     fleksibilitet og tryghed i processen fra ide til færdigt produkt.
   </p>
+</div>
   <div class="CardContainer">
       <img src="../img/stefani.png" alt="billede af ansat" />
       <img src="../img/liv.png" alt="billede af ansat" />
@@ -33,11 +35,11 @@ import "../styles/main.css";
       }
 
       .tekst_wrapper h1 {
-        padding-bottom: 2rem;
+        padding: 1rem;
       }
 
       .tekst_wrapper p {
-        padding-bottom: 2rem;
+        padding: 1rem;
       }
       .CardContainer {
           display: flex;
@@ -45,9 +47,8 @@ import "../styles/main.css";
           justify-content: center;
           align-items: center;
           gap: 2rem;
-          margin: 0rem;
-          padding-top: 0px;
-          padding: 0px 20px 0px 20px;
+          margin: 2rem;
+          padding-bottom: 2rem;
         }
         
       @media screen and (min-width: 700px) {
@@ -57,8 +58,8 @@ import "../styles/main.css";
           justify-content: center;
           align-items: center;
           gap: 4rem;
-          margin: 0rem;
-          padding-top: 30px;
+          margin-left: 15rem;
+          margin-right: 15rem;
         }
       }
     </style>

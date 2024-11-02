@@ -98,16 +98,16 @@ import "../styles/main.css";
   }
 
   .slider {
-    width: 590px;
-    height: 550px;
+    width: max-content;
+    height: 506px;
     overflow: hidden;
     border-radius: 3px;
     box-shadow: 3px 20px 15px 0px rgba(0, 0, 0, 0.15);
   }
 
   img {
-    width: 590px;
-    height: 626px;
+    width: max-content;
+    height: 506px;
     border-radius: 3px;
   }
 
@@ -134,6 +134,21 @@ import "../styles/main.css";
 
   .slider ul li.active {
     display: block;
+  }
+  @media screen and (min-width: 700px) {
+    .slider {
+    width: 590px;
+    height: 550px;
+    overflow: hidden;
+    border-radius: 3px;
+    box-shadow: 3px 20px 15px 0px rgba(0, 0, 0, 0.15);
+  }
+
+  img {
+    width: 590px;
+    height: 626px;
+    border-radius: 3px;
+  }  
   }
 </style>
 
