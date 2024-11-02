@@ -20,7 +20,6 @@ import "../styles/main.css";
     fleksibilitet og tryghed i processen fra ide til færdigt produkt.
   </p>
   <div class="CardContainer">
-    <div>
       <img src="../img/stefani.png" alt="billede af ansat" />
       <img src="../img/liv.png" alt="billede af ansat" />
       <img src="../img/luna.png" alt="billede af ansat" />
@@ -40,13 +39,26 @@ import "../styles/main.css";
       .tekst_wrapper p {
         padding-bottom: 2rem;
       }
+      .CardContainer {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          gap: 2rem;
+          margin: 0rem;
+          padding-top: 0px;
+          padding: 0px 20px 0px 20px;
+        }
+        
       @media screen and (min-width: 700px) {
         .CardContainer {
           display: flex;
+          flex-direction: row;
           justify-content: center;
           align-items: center;
           gap: 4rem;
-          margin: 5rem;
+          margin: 0rem;
+          padding-top: 30px;
         }
       }
     </style>
